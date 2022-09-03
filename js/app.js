@@ -25,6 +25,7 @@ const displayName = names => {
 }
 
 const loadCateDetails = (categoryId) => {
+  toggleSpinner(true);
     //console.log('get details of id', categoryId);
     const url = `https://openapi.programming-hero.com/api/news/category/${categoryId}`;
     //console.log(url);
@@ -90,8 +91,17 @@ const displayCateDetails = allNews => {
 
     });
 
+    toggleSpinner(false);
 }
 
-
+const toggleSpinner = isLoading => {
+  const loaderSection = document.getElementById('loader');
+  if(isLoading){
+      loaderSection.classList.remove('d-none')
+  }
+  else{
+      loaderSection.classList.add('d-none');
+  }
+}
 
 loadCatagory();
