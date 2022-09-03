@@ -7,3 +7,14 @@
 .hr-border{
     border: 1px solid gray;
 }
+a{
+    text-decoration: none;
+}
+/* catagories */
+.category-li{
+    list-style: none;
+    margin: 0px 17px;
+}
+.category-a{
+    color: gray;
+}
