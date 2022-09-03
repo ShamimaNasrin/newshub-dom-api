@@ -18,3 +18,10 @@ a{
 .category-a{
     color: gray;
 }
+/* card */
+.author-img{
+    width: 60px;
+}
+.icon-img{
+    width: 27px;
+}
