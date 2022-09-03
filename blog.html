@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub</title>
+
+    <!-- css bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-light">
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container my-2">
+                <a class="navbar-brand text-primary" href="#">NewsHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr class="bg-secondary container mx-auto my-0 hr-border">
+    </header>
+
+    <main>
+
+        <!-- Category detais Card -->
+        <section class="container">
+            <div class="row g-3 my-5 p-2">
+                <div class="card col-12 border-0 rounded py-3 px-4">
+                    <h4 class="card-title fw-bold">Difference Between var, let, and const?</h4>
+                    <p class="card-text text-muted">The differences between var, let, and const variable declaration in JavaScript include:
+                        Variables declared with var and const are scoped to the immediate function body.
+                        Variables declared with the var keyword are hoisted. Hoisting means that the variable can be accessed in their enclosing scope even before they are declared.
+                        Variables declared with the let keyword are block-scoped, which means the variables will have scope to the immediate enclosing block.</p>
+                </div>
+                <div class="card col-12 border-0 rounded py-3 px-4">
+                    <h4 class="card-title fw-bold">Arrow function vs regular function</h4>
+                    <p class="card-text text-muted">Both regular JavaScript functions and arrow functions work in a similar manner but there are some differences between them. Such as Inside of a regular JavaScript function, this value is dynamic. The dynamic context means that the value of this depends on how the function is invoked. The behavior of this inside of an arrow, function differs considerably from the regular function's this behavior as an arrow function does not have its own “this” keyword. Regular functions are constructible and callable. They can be called using the new keyword. But, the arrow functions are only callable and not constructible.</p>
+                </div>
+                <div class="card col-12 border-0 rounded py-3 px-4">
+                    <h4 class="card-title fw-bold">Why we should use template strings?</h4>
+                    <p class="card-text text-muted">ES6's template strings is a new way to combine strings. We already have methods such as join(), concat() etc to combine strings but the template strings method is the most sophisticated because it's more readable, no backslash to escape quotes and no more messy plus operators.</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- footer start -->
+    <hr class="bg-secondary mx-auto my-0 hr-border">
+    <footer class="footer p-5 bg-white">
+        <p class="text-center mb-0">Copyright &copy 2022 All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- js bootstrap cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
