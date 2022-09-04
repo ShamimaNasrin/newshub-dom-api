@@ -37,6 +37,7 @@ const loadCateDetails = (categoryId) => {
 
 
 const displayCateDetails = allNews => {
+  allNews.sort((a, b) => b.total_view - a.total_view);
     //console.log(allNews);
     const newsNumber = allNews.length;
     const showNewsNumber = document.getElementById('category-number');
