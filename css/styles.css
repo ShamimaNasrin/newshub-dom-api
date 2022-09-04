@@ -4,24 +4,46 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.hr-border{
+
+.hr-border {
     border: 1px solid gray;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* catagories */
-.category-li{
+.category-li {
     list-style: none;
     margin: 0px 17px;
 }
-.category-a{
+
+.category-a {
     color: gray;
 }
+
+.category-a:hover {
+    color: #0000af;
+}
+
+.category-a:active {
+    color: #0000af;
+}
+
+.fixed-width {
+    width: 210px;
+}
+
+.view-width {
+    width: 110px;
+}
+
 /* card */
-.author-img{
+.author-img {
     width: 60px;
 }
-.icon-img{
+
+.icon-img {
     width: 27px;
 }
