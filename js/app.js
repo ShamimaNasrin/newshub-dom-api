@@ -115,5 +115,23 @@ const loadNewsDescription = (newsId) => {
     .catch(error => console.log(error))
 }
 
+const showNewsDescription = newsArr => {
+  console.log(newsArr);
+
+  const modalTitle = document.getElementById('newsDetailModalLabel');
+  modalTitle.innerText = newsArr.title;
+  const newsDetails = document.getElementById('news-details');
+
+  newsDetails.innerHTML = `
+      <div class="mx-auto d-flex justify-content-center align-items-center">
+        <img src="${newsArr.image_url}" class="img-fluid rounded" alt="...">
+      </div>
+      <div class="mx-auto my-3">
+        <p>Views: ${newsArr.total_view ? newsArr.total_view : 'No Data Found'}</p>
+        <p>Rating: ${newsArr.rating.number ? newsArr.rating.number : 'No Data Found'}</p>
+        <p>Published date: ${newsArr.author.published_date ? newsArr.author.published_date : 'No Data Found'}</p>
+      </div>
+  `
+}
 
 loadCatagory();
