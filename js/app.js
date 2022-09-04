@@ -78,7 +78,7 @@ const displayCateDetails = allNews => {
                                         <p class="px-1 my-0"><smal class="fw-bold">${news.total_view}</small></p>
                                       </div>
                                       <div class="d-flex justify-content-evenly align-items-center p-1">
-                                        <a class="category-a text-primary" href="#">more</a>
+                                      <button onclick="loadNewsDescription('${news._id}')" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsDetailModal">more</button>
                                       </div>
                                   </div>
                                 </div>
@@ -103,5 +103,17 @@ const toggleSpinner = isLoading => {
       loaderSection.classList.add('d-none');
   }
 }
+
+const loadNewsDescription = (newsId) => {
+
+  //console.log('get details of id', newsId);
+  const url = `https://openapi.programming-hero.com/api/news/${newsId}`;
+  //console.log(url);
+  fetch(url)
+    .then(res => res.json())
+    .then(data => showNewsDescription(data.data[0]))
+    .catch(error => console.log(error))
+}
+
 
 loadCatagory();
